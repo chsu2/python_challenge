@@ -12,13 +12,16 @@ def threeOneThree(input):
 
 
 	# save all the letters to a string
+	# def not the most efficient way 
 	omg = ""
 
 	#loop through the entire string of file 
 	while i < len(readInFile) - 8:
 
+		# grab the substring
 		s = readInFile[i:i+9]
 
+		# check the order
 		if s[0].islower() and s[1].isupper() and s[2].isupper() and s[3].isupper() and s[4].islower() and s[5].isupper() and s[6].isupper() and s[7].isupper() and s[8].islower():
 			omg+=s[4]
 
